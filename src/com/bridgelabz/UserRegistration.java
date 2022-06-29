@@ -36,6 +36,10 @@ public class UserRegistration {
         String Password3 = scanner.next();
         System.out.println(Pattern.matches("(?=.*?[A-Z])[a-z A-Z 0-9]{8,}", Password3));
 
+        System.out.println("Enter Password has exactly one special character");
+        String Password4 = scanner.next();
+        System.out.println(Pattern.matches("(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}", Password4));
+
 
     }
 
