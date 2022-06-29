@@ -20,6 +20,10 @@ public class UserRegistration {
         String emailId = scanner.next();
         System.out.println(Pattern.matches("[a-z][A-Z a-z 0-9]+[@][a-z]+[.][a-z]{2,}", emailId));
 
+        System.out.println("Enter mobile number");
+        String mobileNumber = scanner.next();
+        System.out.println(Pattern.matches("[+]91 [6-9]\\d{9}", mobileNumber));
+
     }
 
 }
