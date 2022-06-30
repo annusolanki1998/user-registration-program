@@ -9,35 +9,35 @@ public class UserRegistration {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter first name");
-        String firstName = scanner.next();
+        String firstName = scanner.nextLine();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", firstName));
 
         System.out.println("Enter last name");
-        String lastName = scanner.next();
+        String lastName = scanner.nextLine();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", lastName));
 
         System.out.println("Enter emailId");
-        String emailId = scanner.next();
+        String emailId = scanner.nextLine();
         System.out.println(Pattern.matches("[a-z][A-Z a-z 0-9]+[@][a-z]+[.][a-z]{2,}", emailId));
 
         System.out.println("Enter mobile number");
-        String mobileNumber = scanner.next();
+        String mobileNumber = scanner.nextLine();
         System.out.println(Pattern.matches("[+]91 [6-9]\\d{9}", mobileNumber));
 
         System.out.println("Enter Password");
-        String Password1 = scanner.next();
+        String Password1 = scanner.nextLine();
         System.out.println(Pattern.matches("[a-z A-Z]{8,}", Password1));
 
         System.out.println("Enter Password should have at least one upper case letter");
-        String Password2 = scanner.next();
+        String Password2 = scanner.nextLine();
         System.out.println(Pattern.matches("(?=.*?[A-Z])[a-z A-Z]{8,}", Password2));
 
         System.out.println("Enter Password should have at least one numeric number in the password");
-        String Password3 = scanner.next();
+        String Password3 = scanner.nextLine();
         System.out.println(Pattern.matches("(?=.*?[A-Z])[a-z A-Z 0-9]{8,}", Password3));
 
         System.out.println("Enter Password has exactly one special character");
-        String Password4 = scanner.next();
+        String Password4 = scanner.nextLine();
         System.out.println(Pattern.matches("(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}", Password4));
 
 
